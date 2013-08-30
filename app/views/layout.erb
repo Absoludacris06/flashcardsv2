@@ -18,7 +18,20 @@
   <title></title>
 </head>
 <body>
-<div id="navbar"></div>
+<div id="navbar">
+  
+<% if !current_user %>
+    <form action="/user" method="post" class="auth">
+      <label>E-Mail</label>
+        <input type="email" name="email">
+      <label>Password</label>
+        <input type="password" name="password">
+      <input type="submit" name = "submit">    
+    </form>
+<% end %>
+
+
+</div>
 
   <%= yield %>
 
