@@ -2,7 +2,7 @@
 
 <% if !current_user %>
 
-    <form action="/user" method='post' class="sign_up">
+    <form action="/user/new" method='post' class="sign_up">
       
       <% if @error %>
       <div class = "login_error"> <%= @error %> ></div>
