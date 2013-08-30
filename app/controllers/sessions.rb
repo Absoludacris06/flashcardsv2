@@ -5,6 +5,8 @@ post '/user/new' do
   else
     @error = "Please try again"
   end
+
+  redirect '/home'
 end
 
 post '/user' do
@@ -21,3 +23,8 @@ post '/user' do
 
 end
 
+
+get '/logout' do 
+  session.clear
+  redirect '/'
+end
