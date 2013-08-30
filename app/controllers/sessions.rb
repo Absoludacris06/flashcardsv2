@@ -1,6 +1,6 @@
 post '/user/new' do 
   @user = User.create(params)
-  if @user.save
+  if @user
     session["user_id"] = @user.id
     erb :dashboard
   else

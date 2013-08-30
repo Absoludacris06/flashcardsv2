@@ -2,8 +2,19 @@
 
 <% Deck.all.each do |deck_obj| %>
 
+
 <div class="deck">
-<%= deck_obj.subject %>
+<form method = "post" action = "/round">
+
+
+
+<input type="submit" value= "<%= deck_obj.subject %>" >
+<input type="hidden" value = <%= deck_obj.id %> name = "deck_id">
+
+<!-- <a href="/round/deck_obj.id"> <%= deck_obj.subject %> </a>
+ -->
+
+</form>
 </div>
 
 <% end %>
