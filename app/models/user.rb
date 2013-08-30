@@ -1,8 +1,9 @@
 class User < ActiveRecord::Base
   # Remember to create a migration!
+  has_many :rounds, dependent: :destroy
   validates :email, :uniqueness => true
 
-    include BCrypt
+  include BCrypt
 
   def password
     @password ||= Password.new(password_hash)
