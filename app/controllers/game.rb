@@ -1,5 +1,6 @@
 
 post ('/round') do
+  session[:deck_id] = params[:deck_id]
   @round = Round.create(user_id: session[:user_id], deck_id: session[:deck_id])
   session[:round_id] = @round.id
   session[:deck] = Deck.find(@round.deck_id).cards.shuffle
