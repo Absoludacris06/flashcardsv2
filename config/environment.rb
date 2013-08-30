@@ -18,6 +18,9 @@ require 'logger'
 require 'sinatra'
 require "sinatra/reloader" if development?
 
+require 'numbers_in_words'
+require 'numbers_in_words/duck_punch'
+
 require 'erb'
 require 'bcrypt'
 
