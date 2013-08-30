@@ -3,6 +3,11 @@
 
 <form action="/user" method='post' class="sign_up">
   
+  <% if @error %>
+  <div class = "login_error"> <%= @error %> ></div>
+  <% end %>
+
+  
   <label>Name</label>
     <input type="text" class="name" name='name'>
   <label>E-Mail</label>
