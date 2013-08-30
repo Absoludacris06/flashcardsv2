@@ -17,6 +17,9 @@ gem 'rake'
 
 gem 'shotgun'
 
+gem 'numbers_in_words'
+
+
 group :test do
   gem 'faker'
   gem 'rspec'
