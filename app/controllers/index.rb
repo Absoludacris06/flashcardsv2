@@ -4,8 +4,4 @@ get '/' do
 end
 
 
-post '/user' do 
 
-  User.create(params)
-
-end
