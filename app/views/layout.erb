@@ -20,19 +20,20 @@
 
 <div id="navbar">
   <span id="logo">de.qd</span>
-  
-<% if !current_user %>
-    <form action="/user" method="post" class="auth">
-      <label>E-Mail</label>
-        <input type="email" name="email">
-      <label>Password</label>
-        <input type="password" name="password">
-      <input type="submit" name = "submit">    
-    </form>
-  <% else %>
-    <a href="/logout">Log Out<a>
-    <a href="/settings">Account Settings</a>
-    <a href="/stats">Career Stats</a>
+<% if !@error %> 
+  <% if  !current_user %>
+      <form action="/user" method="post" class="auth">
+        <label>E-Mail</label>
+          <input type="email" name="email">
+        <label>Password</label>
+          <input type="password" name="password">
+        <input type="submit" name = "submit">    
+      </form>
+    <% else %>
+      <a href="/logout">Log Out<a>
+      <a href="/settings">Account Settings</a>
+      <a href="/stats">Career Stats</a>
+  <% end %>
 <% end %>
 
 

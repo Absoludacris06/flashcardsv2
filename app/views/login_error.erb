@@ -1,0 +1,21 @@
+<div class="container">
+
+  <h1>Try again! :)</h1>
+
+<% if !current_user %>
+
+    <p><%= @error  %></p>
+    <br />
+    <form action="/user" method="post">
+      <label>E-Mail</label>
+        <input type="email" name="email">
+      <label>Password</label>
+        <input type="password" name="password">
+      <input type="submit" name = "submit">    
+    </form>
+
+<% end %>
+
+
+
+</div>

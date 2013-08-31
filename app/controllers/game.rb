@@ -9,7 +9,7 @@ end
 
 post ('/guess') do
   if session[:deck].empty?
-    erb :results
+    redirect "/results"
   else
     if Card.find(params[:card_id]).answer == params[:guess] #turn into model method
       @correct = 1
@@ -20,4 +20,15 @@ post ('/guess') do
     @card = Card.find(session[:deck].pop)
     erb :guess
   end
+end
+
+get ('/results') do
+
+@definitions = Round.definition(session[:round_id])
+@responses = Round.response(session[:round_id])
+@answers = Round.answer(session[:round_id])
+
+@results = Round.scores(@definition, @answer, @response)
+
+  erb :results
 end
