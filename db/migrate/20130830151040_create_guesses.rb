@@ -4,6 +4,7 @@ class CreateGuesses < ActiveRecord::Migration
       t.belongs_to :round
       t.belongs_to :card
       t.integer :correctness
+      t.string :response
       t.timestamps
     end
   end
