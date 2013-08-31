@@ -30,8 +30,8 @@ class Round < ActiveRecord::Base
     response
   end
 
-  def self.scores(definition, answer, response)
-    definition.zip(answer, response)
+  def self.scores
+    Round.definition().zip(Round.answer, Round.response)
   end
 
 end
