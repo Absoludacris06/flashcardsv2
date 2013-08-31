@@ -22,6 +22,7 @@ th {
 
 body {
   margin-top: 40px;
+  font-family: 'Roboto'
 }
 
 .auth {
@@ -30,12 +31,13 @@ margin-right: 25px
 }
 
 #navbar input {
-margin-right: 15px
+margin-right: 15px;
+display: inline;
 }
 
 
 input[type=submit] {
-    width: 4em;
+    width: 60px;
     height: 23px;
     font-size: small;
     text-align: center
@@ -52,4 +54,9 @@ input[type=submit] {
 .container {
   margin: 120px auto;
   color: black
+}
+
+input {
+  display: block;
+  margin-bottom: 15px;
 }
