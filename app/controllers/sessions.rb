@@ -1,5 +1,7 @@
 post '/user/new' do 
-  @user = User.create(params)
+  @user = User.create(name: params[:name], email: params[:email], password: params[:password])
+  puts @user
+  puts @user.class
   if @user
     session[:user_id] = @user.id
     erb :dashboard

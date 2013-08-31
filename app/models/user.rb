@@ -22,6 +22,7 @@ class User < ActiveRecord::Base
       )
     @user.password = params[:password]
     @user.save!
+    @user
   end
 
 
