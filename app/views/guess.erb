@@ -1,5 +1,5 @@
 <div class="container">
-  <h1><%= session[:card].definition %><h1>
+  <h1><%= @card.definition %><h1>
   <form action="/guess" method="post">
     <input type="text" name="guess" placeholder="answer">
     <input type="submit" value="submit">

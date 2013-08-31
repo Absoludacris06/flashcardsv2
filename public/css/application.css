@@ -15,7 +15,7 @@ th {
   background-color: black;
   opacity: 0.8;
   height: 30px;
-
+  color: white;
   padding: 8px 5px 5px 5px;
 
 }
@@ -48,4 +48,12 @@ input[type=submit] {
   color: white;
   float: right;
   margin-right: 15px
+}
+
+label {
+  color: white;
+}
+
+.container {
+  
 }
