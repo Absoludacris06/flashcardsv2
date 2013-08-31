@@ -35,12 +35,8 @@ class Round < ActiveRecord::Base
   #   Round.definition().zip(Round.answer, Round.response)
   # end
 
-  def self.results
-    results = []
-    self.find(id).guesses.each do |guess_obj|
-      results << guess_obj.card
-    end
-  results 
+  def self.results(round_id)
+    self.find(round_id).guesses
   end
 
 

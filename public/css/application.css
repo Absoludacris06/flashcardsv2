@@ -40,6 +40,17 @@
 
 }
 
+
+.game_container {
+    margin: 120px auto;
+  width: 600px;
+  padding: 0 20px 20px 20px;
+  border: 1px solid #999;
+  background-color: #fbfbfb;
+  border-radius: 5px;
+  box-shadow: 5px 5px 100px #111
+}
+
 th {
   text-align: left;
 }
@@ -107,13 +118,15 @@ input[type=text],input[type=email],input[type=password] {
 /*  display: block;
 */  margin-bottom: 15px;
   border-radius: 5px;
-
 }
 
 #logo {
   font-family: 'Merienda One';
   font-size: large;
   margin: 1px 0 10px 20px;
+  position: absolute;
+  left: 1px;
+  top: 5px;
 }
 
 
@@ -123,12 +136,23 @@ form.sign_up {
 /*  padding-right: 520px;
 */}
 
-.game_container {
-  margin: 120px auto;
-  width: 600px;
-  padding: 0 20px 20px 20px;
-  border: 1px solid #999;
+
+
+.decks input[type=submit] {
+  background-image: url('http://i.imgur.com/bEZ8OBm.png');
+  width: 300px;
+  height: 280px;
+  display: inline-block;
+  margin: 30px;
+  font-family: 'Roboto';
+  font-weight: bolder;
+  font-size: 60px;
   background-color: #fbfbfb;
-  border-radius: 5px;
-  box-shadow: 5px 5px 100px #111
+  border: 0;
+  box-shadow: 1px 1px 50px #aaa;
+  float: left;
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: white;
 }
+
+

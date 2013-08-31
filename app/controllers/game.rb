@@ -8,27 +8,26 @@ post ('/round') do
 end
 
 post ('/guess') do
-  if session[:deck].empty?
-    redirect "/results"
-  else
-    if Card.find(params[:card_id]).answer == params[:guess] #turn into model method
+  if Card.find(params[:card_id]).answer == params[:guess] #turn into model method
       @correct = 1
     else
       @correct = 0
     end
-    @guess = Guess.create(card_id: params[:card_id], round_id: session[:round_id], correctness: @correct)
+  @guess = Guess.create(card_id: params[:card_id], round_id: session[:round_id], correctness: @correct, response: params[:guess])
+
+  if session[:deck].empty?
+    redirect '/results'
+  else
     @card = Card.find(session[:deck].pop)
     erb :guess
   end
 end
 
 get ('/results') do
-
-@definitions = Round.definition(session[:round_id])
-@responses = Round.response(session[:round_id])
-@answers = Round.answer(session[:round_id])
-
-@results = Round.scores(@definition, @answer, @response)
-
+  @guesses = Round.results(session[:round_id])
+  @results = []
+  @guesses.each do |guess|
+  @results << [Card.find(guess.card_id).definition, Card.find(guess.card_id).answer, guess.response, guess.correctness]
+  end
   erb :results
 end
