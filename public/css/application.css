@@ -40,7 +40,8 @@ top: 0;
 #navbar input {
 margin-right: 15px;
 display: inline;
-border-radius: 5px
+border-radius: 5px;
+line-height:  13px
 }
 
 
@@ -50,9 +51,6 @@ input[type=submit] {
     font-size: small;
     text-align: center;
 }
-
-
-
 
 
 #navbar a {
