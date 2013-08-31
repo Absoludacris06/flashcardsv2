@@ -1,8 +1,8 @@
 .container {
   margin: 20px auto;
   width: 600px;
-  padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+  padding: 0 20px 20px 20px;
+  border: 1px solid black;
 }
 th {
   text-align: left;
@@ -17,22 +17,20 @@ th {
   height: 30px;
   color: white;
   padding: 8px 5px 5px 5px;
-
+  box-shadow: 10px 10px 50px #333
 }
 
 body {
   margin-top: 40px;
-
 }
 
 .auth {
 float: right;
-margin-right: 15px
+margin-right: 25px
 }
 
-
-.sign_up {
-
+#navbar input {
+margin-right: 15px
 }
 
 
@@ -50,10 +48,8 @@ input[type=submit] {
   margin-right: 15px
 }
 
-label {
-  color: white;
-}
 
 .container {
-  
+  margin: 120px auto;
+  color: black
 }
