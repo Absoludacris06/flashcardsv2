@@ -24,6 +24,20 @@
   box-shadow: 5px 5px 100px #111
 }
 
+.container h1 {
+  display: inline-block;
+  float: left
+}
+
+.container .cards {
+  background-image: url('http://i.imgur.com/nAlVE9d.png');
+  width: 300px;
+  height: 270px;
+  display: inline-block;
+  float: right
+
+}
+
 th {
   text-align: left;
 }
@@ -87,9 +101,9 @@ input[type=submit] {
   color: black
 }
 
-input[type=text] {
-  display: block;
-  margin-bottom: 15px;
+input[type=text],input[type=email],input[type=password] {
+/*  display: block;
+*/  margin-bottom: 15px;
   border-radius: 5px;
 
 }
@@ -100,4 +114,10 @@ input[type=text] {
   margin: 1px 0 10px 20px;
 }
 
+
+form.sign_up {
+  width: 180px;
+  display: inline-block;
+/*  padding-right: 520px;
+*/}
 
