@@ -1,6 +1,6 @@
 class CreateGuesses < ActiveRecord::Migration
   def change
-    create_tables :guesses do |t|
+    create_table :guesses do |t|
       t.belongs_to :round
       t.belongs_to :card
       t.integer :correctness
