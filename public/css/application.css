@@ -123,3 +123,12 @@ form.sign_up {
 /*  padding-right: 520px;
 */}
 
+.game_container {
+  margin: 120px auto;
+  width: 600px;
+  padding: 0 20px 20px 20px;
+  border: 1px solid #999;
+  background-color: #fbfbfb;
+  border-radius: 5px;
+  box-shadow: 5px 5px 100px #111
+}
