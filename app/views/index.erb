@@ -1,9 +1,9 @@
 <div class="container">
 
-  <h1>Create an Account</h1>
 
 <% if !current_user %>
 
+  <h1>Create an Account</h1>
     <form action="/user/new" method='post' class="sign_up">
       
       <% if @error %>
