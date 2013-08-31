@@ -4,12 +4,11 @@ post '/user/new' do
   puts @user.class
   if @user
     session[:user_id] = @user.id
-    erb :dashboard
   else
     @error = "Please try again"
-    redirect '/'
   end
 
+  redirect '/'
 end
 
 post '/user' do
@@ -18,12 +17,11 @@ post '/user' do
   
   if @user.password == params[:password]
     session[:user_id] = @user.id
-    erb :dashboard
   else
     @invalid = "Invalid password and username combination"
-    redirect '/'
   end
 
+  redirect '/'
 end
 
 
