@@ -1,4 +1,15 @@
+<div class="container">
+  <h1 class="results">Well Job!</h1>
+  <% @results.each do |result| %>
+    <p ><span class='definition'> Definition: <%= result[0] %> </span> <span class='answer <%="#{result[3]}"%>'> Answer: <%= result[1] %> </span> <span class='response'> Response: <%= result[2] %> </span>  </p>
+  <% end %>
 
 
-<h1 class="results">You Suck!</h1>
+
+
+</div>
+
+
+
+
 
