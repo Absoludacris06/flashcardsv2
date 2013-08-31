@@ -22,7 +22,6 @@ post '/user' do
     @error = "Incorrect Email/Password Combination"
     erb :login_error
   end
-
 end
 
 
