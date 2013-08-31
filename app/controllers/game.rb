@@ -12,7 +12,7 @@ post ('/guess') do
   if session[:deck].empty?
     erb :results
   else
-    if session[:card].answer == params[:guess]
+    if session[:card].answer == params[:guess] #turn into model method
       @correct = 1
     else
       @correct = 0
