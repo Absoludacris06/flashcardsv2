@@ -5,6 +5,7 @@ post ('/round') do
   session[:round_id] = @round.id
   session[:deck] = Deck.find(@round.deck_id).cards.shuffle
   session[:card] = session[:deck].pop
+  @card = session[:card]
   erb :guess
 end
 
@@ -19,6 +20,7 @@ post ('/guess') do
     end
     @guess = Guess.create(card_id: session[:card].id, round_id: session[:round_id], correctness: @correct)
     session[:card] = session[:deck].pop
+    @card = session[:card]
     erb :guess
   end
 end
