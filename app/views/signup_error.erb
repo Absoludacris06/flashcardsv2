@@ -1,0 +1,28 @@
+<div class="container">
+
+  <h1>Try again! :)</h1>
+
+<% if !current_user %>
+
+    <% if !@errors.empty? %>
+      <% @errors.each do |error| %>
+        <p><%= error %></p>
+      <% end %>
+  
+    <% end %>
+    <form action="/user/new" method='post' class="sign_up">
+
+      <label>Name</label>
+        <input type="text" class="name" name='name'>
+      <label>E-Mail</label>
+        <input type="email" class="email" name='email'>
+      <label>Password</label>
+        <input type="password" class="password" name='password' pattern='.{6,}'>
+      <input type="submit" name='submit'>
+    </form>
+
+<% end %>
+
+
+
+</div>

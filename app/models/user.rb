@@ -21,7 +21,7 @@ class User < ActiveRecord::Base
       :email => params[:email]
       )
     @user.password = params[:password]
-    @user.save!
+    @user.save
     @user
   end
 
