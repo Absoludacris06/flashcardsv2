@@ -2,8 +2,8 @@ class Round < ActiveRecord::Base
   belongs_to :user
   belongs_to :deck
   
-  has_many :cards, :through => :guesses, dependent: :destroy
-  has_many :guesses
+  has_many :cards, :through => :guesses
+  has_many :guesses, dependent: :destroy
 
 
   # def self.definition(id)
@@ -39,6 +39,9 @@ class Round < ActiveRecord::Base
     self.find(round_id).guesses
   end
 
+  def self.subjects(round_id)
+    
+  end
 
 end
 

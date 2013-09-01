@@ -1,5 +1,6 @@
 class Deck < ActiveRecord::Base
   has_many :cards, dependent: :destroy
+  has_many :rounds
 
   def self.shuffled_card_ids(deck_id)
     ids = []

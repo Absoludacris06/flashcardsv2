@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
   # Remember to create a migration!
   has_many :rounds, dependent: :destroy
   validates :email, :uniqueness => true
+  has_many :guesses, :through => :rounds
 
   include BCrypt
 
@@ -25,5 +26,16 @@ class User < ActiveRecord::Base
     @user
   end
 
+  def round_count
+    self.rounds.count
+  end
+
+  def overall_guesses
+    self.guesses.count
+  end
+
+  def correct_guesses
+    self.guesses.where(correctness: 1).count
+  end
 
 end
