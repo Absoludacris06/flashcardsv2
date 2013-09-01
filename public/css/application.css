@@ -76,24 +76,24 @@ body {
 }
 
 .auth {
-float: right;
-margin-right: 25px;
-top: 0;
-}
+  float: right;
+  margin-right: 25px;
+  top: 0;
+  }
 
 #navbar input {
-margin-right: 15px;
-display: inline;
-border-radius: 5px;
-line-height:  13px
+  margin-right: 15px;
+  display: inline;
+  border-radius: 5px;
+  line-height:  13px
 }
 
 
 input[type=submit] {
-    width: 60px;
-    height: 21px;
-    font-size: small;
-    text-align: center;
+  width: 60px;
+  height: 21px;
+  font-size: small;
+  text-align: center;
 }
 
 
@@ -115,8 +115,7 @@ input[type=submit] {
 }
 
 input[type=text],input[type=email],input[type=password] {
-/*  display: block;
-*/  margin-bottom: 15px;
+  margin-bottom: 15px;
   border-radius: 5px;
 }
 
@@ -133,13 +132,14 @@ input[type=text],input[type=email],input[type=password] {
 form.sign_up {
   width: 180px;
   display: inline-block;
-/*  padding-right: 520px;
-*/}
+}
 
 
 .decks {
   margin: auto
 }
+
+
 .decks input[type=submit] {
   background-image: url('http://i.imgur.com/bEZ8OBm.png');
   width: 300px;
@@ -181,13 +181,10 @@ td.response0 {
   color: #FF4444;
 }
 
-td.response1 {
+td.response1, td.answer {
   color: #669900;
 }
 
-td.answer {
-  color: #669900;
-}
 
 .avg {
   margin-right: 20px;
@@ -214,6 +211,7 @@ margin-left: 20px
 }
 
 
+<<<<<<< HEAD
 .signup_error_container, .login_error_container {
   margin: 120px auto;
   width: 600px;
@@ -228,3 +226,5 @@ margin-left: 20px
   color: red
 }
 
+=======
+>>>>>>> master

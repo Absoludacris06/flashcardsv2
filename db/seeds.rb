@@ -1,6 +1,6 @@
 Deck.create(subject: "Numbers")
 
-(1..100).each do |i|
+(1..10).each do |i|
   Card.create(definition: i.in_words, answer: i.to_s, deck_id: 1)
 end
 

@@ -2,8 +2,13 @@
   <h1><%= @card.definition %><h1>
   <form action="/guess" method="post">
     <input type="text" pattern = '.+' name="guess" placeholder="answer" autofocus>
+
     <input type="hidden" name='card_id' value="<%="#{@card.id}"%>">
     <input type="submit" value="submit">
   </form>  
 </div>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
