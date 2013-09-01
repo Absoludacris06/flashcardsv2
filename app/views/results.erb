@@ -3,6 +3,10 @@
 
   <h2 class="results">Results</h2><br/>
 
+<div class = "scoreboard"><span class="score"> <%= (@total_guesses-@total_wrong).to_i %>/<%=@total_guesses.to_i  %> </span>
+<span class="avg"> <%= (((@total_guesses-@total_wrong) / @total_guesses) * 100).to_i  %>% </span></div>
+ <span class="correct"> CORRECT </span>
+
 
   <table class="results">
   <tbody>
@@ -17,7 +21,7 @@
 
       <td class='definition'> <%= result[0] %></td>
       <td class='answer '> <%= result[1] %> </td>
-      <td class='response <%="#{result[3]}"%>'> <%= result[2] %>  </td>
+      <td class='response<%="#{result[3]}"%>'> <%= result[2] %>  </td>
     
     </tr>
   <% end %>

@@ -162,20 +162,58 @@ form.sign_up {
   color: red;
 }
 
+
+
 th.definition_header {
   width: 400px;
 }
 
-th.answer_header {
+th.answer_header, th.response_header {
   width: 100px;
 }
 
-th.response_header {
-  width: 100px;
+th {
+  border-bottom: 1px solid #333;
+  vertical-align: bottom;
 }
 
-td.response.0 {
-  color: red;
+td.response0 {
+  color: #FF4444;
+}
+
+td.response1 {
+  color: #669900;
+}
+
+td.answer {
+  color: #669900;
+}
+
+.avg {
+  margin-right: 20px;
+  font-size: 100px;
+  font-weight: lighter;
+  float: right;
+  margin-right: 50px
 }
 
 
+.score {
+font-weight: bolder;
+font-size: 80px;
+margin-left: 20px 
+
+}
+
+.correct {  
+  font-size: 27px;
+  font-weight: lighter;
+  color: #669900;
+margin-left: 20px 
+
+}
+
+
+.scoreboard {
+
+}

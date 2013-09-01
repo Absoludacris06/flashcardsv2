@@ -29,5 +29,8 @@ get ('/results') do
   @guesses.each do |guess|
   @results << [Card.find(guess.card_id).definition, Card.find(guess.card_id).answer, guess.response, guess.correctness]
   end
+
+  @total_guesses = Guess.where(:round_id => session[:round_id]).count * 1.0
+  @total_wrong = Guess.where(:round_id => session[:round_id]).where(:correctness => 0).count
   erb :results
 end
