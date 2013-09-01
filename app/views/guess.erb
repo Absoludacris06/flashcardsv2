@@ -1,9 +1,9 @@
 <div class="game_container">
   <h1><%= @card.definition %><h1>
   <form action="/guess" method="post">
-    <input type="text" name="guess" placeholder="answer">
+    <input type="text" pattern = '.+' name="guess" placeholder="answer" autofocus>
     <input type="hidden" name='card_id' value="<%="#{@card.id}"%>">
     <input type="submit" value="submit">
-  </form>
-  
+  </form>  
 </div>
+

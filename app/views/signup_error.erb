@@ -1,4 +1,4 @@
-<div class="container">
+<div class="signup_error_container">
 
   <h1>Try again! :)</h1>
 
@@ -6,14 +6,14 @@
 
     <% if !@errors.empty? %>
       <% @errors.each do |error| %>
-        <p><%= error %></p>
+        <div class="error"><%= error %></div>
       <% end %>
   
     <% end %>
     <form action="/user/new" method='post' class="sign_up">
 
       <label>Name</label>
-        <input type="text" class="name" name='name'>
+        <input type="text" class="name" name='name' autofocus>
       <label>E-Mail</label>
         <input type="email" class="email" name='email'>
       <label>Password</label>
