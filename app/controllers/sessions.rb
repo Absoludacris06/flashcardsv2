@@ -43,7 +43,11 @@ get '/stats' do
   rounds.each do |round|
     correct_guesses = round.guesses.where(correctness: 1).count
     total_guesses = round.guesses.count
-    percentages << correct_guesses.percent_of(total_guesses).round(2)
+    if total_guesses != 0
+      percentages << correct_guesses.percent_of(total_guesses).round(2)
+    else
+      percentages << 0
+    end
     subjects << Deck.find(round.deck_id).subject
     # only call on @current_user, @round_stats in erb
   end
