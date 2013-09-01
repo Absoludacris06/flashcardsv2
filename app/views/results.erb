@@ -1,9 +1,29 @@
 <div class="container">
-  <h1 class="results">Well Job!</h1>
+
+
+  <h2 class="results">Results</h2><br/>
+
+
+  <table class="results">
+  <tbody>
+  <tr class="headers">
+      <th class="definition_header">Definition</th>
+      <th class="answer_header">Answer</th>
+      <th class="response_header">Your Response</th>
+</tr>
+
   <% @results.each do |result| %>
-    <p ><span class='definition'> Definition: <%= result[0] %> </span> <span class='answer <%="#{result[3]}"%>'> Answer: <%= result[1] %> </span> <span class='response'> Response: <%= result[2] %> </span>  </p>
+    <tr >
+
+      <td class='definition'> <%= result[0] %></td>
+      <td class='answer '> <%= result[1] %> </td>
+      <td class='response <%="#{result[3]}"%>'> <%= result[2] %>  </td>
+    
+    </tr>
   <% end %>
 
+</tbody>
+</table>
 
 
 
