@@ -1,17 +1,16 @@
 
+<div class="decks">
 
 <% Deck.all.each do |deck_obj| %>
 
-
-<div class="decks">
 
 <form method = "post" action = "/round">
 
   <input type="submit" value = "<%= deck_obj.subject %>" >
   <input type="hidden" value = "<%= deck_obj.id %>" name = "deck_id">
 
-
 </form>
-</div>
+
 
 <% end %>
+</div>

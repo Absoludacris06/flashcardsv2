@@ -73,6 +73,7 @@ body {
   background-image: url('http://i.imgur.com/YiI99dW.jpg');
   background-attachment: fixed;
   background-position: cover; 
+  text-align: center
 }
 
 .auth {
@@ -136,7 +137,11 @@ form.sign_up {
 
 
 .decks {
-  margin: auto
+  margin: 120px auto
+}
+
+.decks form {
+  display: inline-block;
 }
 
 
@@ -196,9 +201,9 @@ td.response1, td.answer {
 
 
 .score {
-font-weight: bolder;
-font-size: 80px;
-margin-left: 20px 
+  font-weight: bolder;
+  font-size: 80px;
+  margin-left: 20px 
 
 }
 
@@ -206,12 +211,10 @@ margin-left: 20px
   font-size: 27px;
   font-weight: lighter;
   color: #669900;
-margin-left: 20px 
+  margin-left: 20px 
 
 }
 
-
-<<<<<<< HEAD
 .signup_error_container, .login_error_container {
   margin: 120px auto;
   width: 600px;
@@ -226,5 +229,3 @@ margin-left: 20px
   color: red
 }
 
-=======
->>>>>>> master
