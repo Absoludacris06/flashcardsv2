@@ -12,4 +12,15 @@ helpers do
     !current_user.nil?
   end
 
+  class Numeric
+    def percent_of(n)
+      self.to_f / n.to_f * 100.0
+    end
+  end
+
+# Note: the brackets () around number are optional
+# p (1).percent_of(10)    # => 10.0  (%)
+# p (200).percent_of(100) # => 200.0 (%)
+# p (0.5).percent_of(20)  # => 2.5   (%)
+
 end

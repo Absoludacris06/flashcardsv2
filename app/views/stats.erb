@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="career">
+
+    <h1 class="stats">Your Career Stats!</h1>
+
+    <p>
+      <% @round_stats.each do |round| %>
+      <span class="subject"> <%= round[0] %></span>
+      <span class="percent_of_round"><%= round[1] %> % </span>
+      <% end %>
+    </p>
+
+    <h3>Number of Rounds Played
+      <span class="round_count"><%= @current_user.round_count %></span>
+    </h3>
+
+    <h3>Number of Overall Guesses
+      <span class="overall_guesses"><%= @current_user.overall_guesses %></span>
+    </h3>
+
+    <h3>Number of Overall Correct Guesses
+      <span class="correct_guesses"><%= @current_user.correct_guesses %></span>
+    </h3>
+
+  </div>
+</div>
