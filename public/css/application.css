@@ -137,7 +137,9 @@ form.sign_up {
 */}
 
 
-
+.decks {
+  margin: auto
+}
 .decks input[type=submit] {
   background-image: url('http://i.imgur.com/bEZ8OBm.png');
   width: 300px;
@@ -147,12 +149,33 @@ form.sign_up {
   font-family: 'Roboto';
   font-weight: bolder;
   font-size: 60px;
-  background-color: #fbfbfb;
+  background-color: #ddd;
   border: 0;
   box-shadow: 1px 1px 50px #aaa;
   float: left;
-   -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  border-radius: 50px
+}
+
+.response 0 {
+  color: red;
+}
+
+th.definition_header {
+  width: 400px;
+}
+
+th.answer_header {
+  width: 100px;
+}
+
+th.response_header {
+  width: 100px;
+}
+
+td.response.0 {
+  color: red;
 }
 
 

@@ -8,7 +8,7 @@ post ('/round') do
 end
 
 post ('/guess') do
-  if Card.find(params[:card_id]).answer == params[:guess] #turn into model method
+  if Card.find(params[:card_id]).answer.downcase == params[:guess].downcase #turn into model method
       @correct = 1
     else
       @correct = 0
