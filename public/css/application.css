@@ -1,258 +1,209 @@
 .main_logo {
-  font-family: 'Merienda One';
-  font-size: 140px;
-  text-align: center;
-  margin-top: 100px;
-  font-weight: bolder;
+    font-family:'Merienda One';
+    font-size: 140px;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: bolder;
 }
-
 .tagline {
-  margin: 0 auto;
-  text-align: center;
-  font-weight: lighter;
-  padding-right: 250px;
-  font-size: 18px;
-  color: #005600
+    margin: 0 auto;
+    text-align: center;
+    font-weight: lighter;
+    padding-right: 250px;
+    font-size: 18px;
+    color: #005600
 }
-
 .container {
-  width: 600px;
-  padding: 0 20px 20px 20px;
-  border: 1px solid #999;
-  background-color: #fbfbfb;
-  border-radius: 5px;
-  box-shadow: 5px 5px 100px #333;
-  margin: 120px auto;
-  color: black;
-  text-align: left
+    width: 600px;
+    padding: 0 20px 20px 20px;
+    border: 1px solid #999;
+    background-color: #fbfbfb;
+    border-radius: 5px;
+    box-shadow: 5px 5px 100px #333;
+    margin: 120px auto;
+    color: black;
+    text-align: left
 }
-
 .container h1 {
-  display: inline-block;
-  float: left
+    display: inline-block;
+    float: left
 }
-
 .container .cards {
-  background-image: url('http://i.imgur.com/bEZ8OBm.png');
-  width: 300px;
-  height: 280px;
-  display: inline-block;
-  float: right;
-  margin-top: 20px
-
+    background-image: url('http://i.imgur.com/bEZ8OBm.png');
+    width: 300px;
+    height: 280px;
+    display: inline-block;
+    float: right;
+    margin-top: 20px
 }
-
-
 .game_container {
     margin: 120px auto;
-  width: 600px;
-  padding: 0 20px 20px 20px;
-  border: 1px solid #999;
-  background-color: #fbfbfb;
-  border-radius: 5px;
-  box-shadow: 5px 5px 100px #111
+    width: 600px;
+    padding: 0 20px 20px 20px;
+    border: 1px solid #999;
+    background-color: #fbfbfb;
+    border-radius: 5px;
+    box-shadow: 5px 5px 100px #111
 }
-
 th {
-  text-align: left;
+    text-align: left;
 }
-
 #navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: black;
-  opacity: 0.8;
-  height: 30px;
-  color: white;
-  padding: 8px 5px 5px 5px;
-  box-shadow: 10px 10px 50px #333
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+    height: 30px;
+    color: white;
+    padding: 8px 5px 5px 5px;
+    box-shadow: 10px 10px 50px #333
 }
-
 body {
-  margin-top: 40px;
-  font-family: 'Roboto';
-  background-image: url('http://i.imgur.com/YiI99dW.jpg');
-  background-attachment: fixed;
-  background-position: cover; 
-  text-align: center
+    margin-top: 40px;
+    font-family:'Roboto';
+    background-image: url('http://i.imgur.com/YiI99dW.jpg');
+    background-attachment: fixed;
+    background-position: cover;
+    text-align: center
 }
-
 .auth {
-  float: right;
-  margin-right: 25px;
-  top: 0;
-  }
-
+    float: right;
+    margin-right: 25px;
+    top: 0;
+}
 #navbar input {
-  margin-right: 15px;
-  display: inline;
-  border-radius: 5px;
-  line-height:  13px
+    margin-right: 15px;
+    display: inline;
+    border-radius: 5px;
+    line-height: 13px
 }
-
-
 input[type=submit] {
-  width: 60px;
-  height: 21px;
-  font-size: small;
-  text-align: center;
+    width: 60px;
+    height: 21px;
+    font-size: small;
+    text-align: center;
 }
-
-
 #navbar a {
-  color: white;
-  float: right;
-  margin-right: 25px;
-  font-weight: lighter;
-  text-decoration: none
+    color: white;
+    float: right;
+    margin-right: 25px;
+    font-weight: lighter;
+    text-decoration: none
 }
-
 #navbar label {
-  font-size: x-small;
+    font-size: x-small;
 }
-
-
-
-input[type=text],input[type=email],input[type=password] {
-  margin-bottom: 15px;
-  border-radius: 5px;
+input[type=text], input[type=email], input[type=password] {
+    margin-bottom: 15px;
+    border-radius: 5px;
 }
-
 #logo {
-  font-family: 'Merienda One';
-  font-size: large;
-  margin: 1px 0 10px 20px;
-  position: absolute;
-  left: 1px;
-  top: 5px;
+    font-family:'Merienda One';
+    font-size: large;
+    margin: 1px 0 10px 20px;
+    position: absolute;
+    left: 1px;
+    top: 5px;
 }
-
-
 form.sign_up {
-  width: 180px;
-  display: inline-block;
+    width: 180px;
+    display: inline-block;
 }
-
-
 .decks {
-  margin: 120px auto
+    margin: 120px auto
 }
-
 .decks form {
-  display: inline-block;
+    display: inline-block;
 }
-
-
 .decks input[type=submit] {
-  background-image: url('http://i.imgur.com/bEZ8OBm.png');
-  width: 300px;
-  height: 280px;
-  display: inline-block;
-  margin: 30px;
-  font-family: 'Roboto';
-  font-weight: bolder;
-  font-size: 60px;
-  background-color: #ddd;
-  border: 0;
-  box-shadow: 1px 1px 50px #aaa;
-  float: left;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
-  border-radius: 50px
+    background-image: url('http://i.imgur.com/bEZ8OBm.png');
+    width: 300px;
+    height: 280px;
+    display: inline-block;
+    margin: 30px;
+    font-family:'Roboto';
+    font-weight: bolder;
+    font-size: 60px;
+    background-color: #ddd;
+    border: 0;
+    box-shadow: 1px 1px 50px #aaa;
+    float: left;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    border-radius: 50px
 }
-
 .response 0 {
-  color: red;
+    color: red;
 }
-
-
-
 th.definition_header {
-  width: 400px;
+    width: 400px;
 }
-
 th.answer_header, th.response_header {
-  width: 100px;
+    width: 100px;
 }
-
 th {
-  border-bottom: 1px solid #333;
-  vertical-align: bottom;
+    border-bottom: 1px solid #333;
+    vertical-align: bottom;
 }
-
 td.response0 {
-  color: #FF4444;
+    color: #FF4444;
 }
-
 td.response1, td.answer {
-  color: #669900;
+    color: #669900;
 }
-
-
 .avg {
-  margin-right: 20px;
-  font-size: 100px;
-  font-weight: lighter;
-  float: right;
-  margin-right: 50px
+    margin-right: 20px;
+    font-size: 100px;
+    font-weight: lighter;
+    float: right;
+    margin-right: 50px
 }
-
-
 .score {
-  font-weight: bolder;
-  font-size: 80px;
-  margin-left: 20px 
-
+    font-weight: bolder;
+    font-size: 80px;
+    margin-left: 20px
 }
-
-.correct {  
-  font-size: 27px;
-  font-weight: lighter;
-  color: #669900;
-  margin-left: 20px 
-
+.correct {
+    font-size: 27px;
+    font-weight: lighter;
+    color: #669900;
+    margin-left: 20px
 }
-
 .signup_error_container, .login_error_container {
-  margin: 120px auto;
-  width: 600px;
-  padding: 0 20px 20px 20px;
-  border: 1px solid #999;
-  background-color: #fbfbfb;
-  border-radius: 5px;
-  box-shadow: 5px 5px 100px #111
+    margin: 120px auto;
+    width: 600px;
+    padding: 0 20px 20px 20px;
+    border: 1px solid #999;
+    background-color: #fbfbfb;
+    border-radius: 5px;
+    box-shadow: 5px 5px 100px #111
 }
-
 .signup_error_container .error, .login_error_container .error {
-  color: red
+    color: red
 }
-
 .stats_container {
-  width: 600px;
-  padding: 0 20px 20px 20px;
-  border: 1px solid #999;
-  background-color: #fbfbfb;
-  border-radius: 5px;
-  box-shadow: 5px 5px 100px #333;
-  margin: 120px auto;
-  color: black;
-  text-align: left
+    width: 600px;
+    padding: 0 20px 20px 20px;
+    border: 1px solid #999;
+    background-color: #fbfbfb;
+    border-radius: 5px;
+    box-shadow: 5px 5px 100px #333;
+    margin: 120px auto;
+    color: black;
+    text-align: left
 }
-
 table.stats {
-  width: 100%;
-  font-size: 20px;
-  margin-top: 50px
+    width: 100%;
+    font-size: 20px;
+    margin-top: 50px
 }
-
 table.stats th {
-  font-size: 25px;
-  font-weight: lighter;
+    font-size: 25px;
+    font-weight: lighter;
 }
-
 table.stats2 {
-  font-size: 30px;
-  font-weight: lighter;
-  margin: 80px auto
+    font-size: 30px;
+    font-weight: lighter;
+    margin: 80px auto
 }

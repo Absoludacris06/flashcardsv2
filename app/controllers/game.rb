@@ -7,12 +7,13 @@ post ('/round') do
   erb :guess
 end
 
+
+
 post ('/guess') do
-  if Card.find(params[:card_id]).answer.downcase == params[:guess].downcase #turn into model method
-      @correct = 1
-    else
-      @correct = 0
-    end
+
+
+  @correct = Card.is_correct?(params[:card_id], params[:guess])
+
   @guess = Guess.create(card_id: params[:card_id], round_id: session[:round_id], correctness: @correct, response: params[:guess])
 
   if session[:deck].empty?
@@ -21,7 +22,10 @@ post ('/guess') do
     @card = Card.find(session[:deck].pop)
     erb :guess
   end
+  
 end
+
+
 
 get ('/results') do
   @guesses = Round.results(session[:round_id])
