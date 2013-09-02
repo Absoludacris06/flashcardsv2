@@ -228,3 +228,31 @@ td.response1, td.answer {
   color: red
 }
 
+.stats_container {
+  width: 600px;
+  padding: 0 20px 20px 20px;
+  border: 1px solid #999;
+  background-color: #fbfbfb;
+  border-radius: 5px;
+  box-shadow: 5px 5px 100px #333;
+  margin: 120px auto;
+  color: black;
+  text-align: left
+}
+
+table.stats {
+  width: 100%;
+  font-size: 20px;
+  margin-top: 50px
+}
+
+table.stats th {
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+table.stats2 {
+  font-size: 30px;
+  font-weight: lighter;
+  margin: 80px auto
+}

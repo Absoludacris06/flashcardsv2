@@ -1,28 +1,46 @@
-<div class="container">
+<div class="stats_container">
   <div class="career">
 
     <h1 class="stats">Your Career Stats!</h1>
 
-    <p>
+
+
+<table class="stats">
+
+<tbody>
+<tr>
+  <th>Subject</th>
+  <th>Grade</th>
+</tr>
+
       <% @round_stats.each do |round| %>
-      <h3>Subject</h3>
-      <span class="subject"> <%= round[0] %></span>
-      <h3>Subject Grade</h3>
-      <span class="percent_of_round"><%= round[1] %> % </span>
+<tr>
+      <td class="subject"> <%= round[0] %></td>
+      <td class="percent_of_round"><%= round[1] %> % </td>
+</tr>
       <% end %>
-    </p>
 
-    <h3>Number of Rounds Played
-      <span class="round_count"><%= @current_user.round_count %></span>
-    </h3>
+</tbody>
+</table>
+<hr/>
 
-    <h3>Number of Overall Guesses
-      <span class="overall_guesses"><%= @current_user.overall_guesses %></span>
-    </h3>
-
-    <h3>Number of Overall Correct Guesses
-      <span class="correct_guesses"><%= @current_user.correct_guesses %></span>
-    </h3>
+<table class = "stats2">
+<tbody>
+<tr>
+    <td>Rounds Played: </td>
+      <td class="round_count"><%= @current_user.round_count %></td>
+</tr>
+<tr>
+    <td>Correct Guesses: </td>
+      <td class="correct_guesses"><%= @current_user.correct_guesses %></td>
+</tr>
+<tr>
+    <td>Overall Guesses: </td>
+      <td class="overall_guesses"><%= @current_user.overall_guesses %></td>
+</tr>
+</tbody>
+</table>
 
   </div>
 </div>
+
